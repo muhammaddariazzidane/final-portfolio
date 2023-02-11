@@ -28,7 +28,7 @@ export default function Skills() {
                     <Html />
                   </div>
                 </div>
-                <div className="flex flex-col items-center mt-4 justify-center">
+                <div className="flex flex-col items-center lg:mt-2 mt-0 justify-center">
                   <h3 className="text-violet-100 font-semibold italic">HTML 5</h3>
                 </div>
               </div>
@@ -42,7 +42,7 @@ export default function Skills() {
                     <Css />
                   </div>
                 </div>
-                <div className="flex flex-col items-center mt-4 justify-center">
+                <div className="flex flex-col items-center lg:mt-2 mt-0 justify-center">
                   <h3 className="text-violet-100 font-semibold italic">CSS 3</h3>
                 </div>
               </div>
@@ -56,7 +56,7 @@ export default function Skills() {
                     <Js />
                   </div>
                 </div>
-                <div className="flex flex-col items-center mt-4 justify-center">
+                <div className="flex flex-col items-center lg:mt-2 mt-0 justify-center">
                   <h3 className="text-violet-100 font-semibold italic">Javacript</h3>
                 </div>
               </div>
@@ -70,7 +70,7 @@ export default function Skills() {
                     <FaPhp size={"3.2em"} />
                   </div>
                 </div>
-                <div className="flex flex-col items-center mt-4 justify-center">
+                <div className="flex flex-col items-center lg:mt-2 mt-0 justify-center">
                   <h3 className="text-violet-100 font-semibold italic">PHP</h3>
                 </div>
               </div>
@@ -85,7 +85,7 @@ export default function Skills() {
                     <Bootstrap />
                   </div>
                 </div>
-                <div className="flex flex-col items-center mt-4 justify-center">
+                <div className="flex flex-col items-center lg:mt-2 mt-0 justify-center">
                   <h3 className="text-violet-100 font-semibold italic">Bootstrap</h3>
                 </div>
               </div>
@@ -99,7 +99,7 @@ export default function Skills() {
                     <Tailwind />
                   </div>
                 </div>
-                <div className="flex flex-col items-center mt-4 justify-center">
+                <div className="flex flex-col items-center lg:mt-2 mt-0 justify-center">
                   <h3 className="text-violet-100 font-semibold italic">Tailwind CSS</h3>
                 </div>
               </div>
@@ -113,7 +113,7 @@ export default function Skills() {
                     <Codeigniter />
                   </div>
                 </div>
-                <div className="flex flex-col items-center mt-4 justify-center">
+                <div className="flex flex-col items-center lg:mt-2 mt-0 justify-center">
                   <h3 className="text-violet-100 font-semibold italic">Codeigniter</h3>
                 </div>
               </div>
@@ -127,7 +127,7 @@ export default function Skills() {
                     <ReactIcon />
                   </div>
                 </div>
-                <div className="flex flex-col items-center mt-4 justify-center">
+                <div className="flex flex-col items-center lg:mt-2 mt-0 justify-center">
                   <h3 className="text-violet-100 font-semibold italic">React js</h3>
                 </div>
               </div>
@@ -141,7 +141,7 @@ export default function Skills() {
                     <Laravel />
                   </div>
                 </div>
-                <div className="flex flex-col items-center mt-4 justify-center">
+                <div className="flex flex-col items-center lg:mt-2 mt-0 justify-center">
                   <h3 className="text-violet-100 font-semibold italic">Laravel</h3>
                 </div>
               </div>
@@ -155,7 +155,7 @@ export default function Skills() {
                     <Mysql />
                   </div>
                 </div>
-                <div className="flex flex-col items-center mt-4 justify-center">
+                <div className="flex flex-col items-center lg:mt-2 mt-0 justify-center">
                   <h3 className="text-violet-100 font-semibold italic">MYSQL</h3>
                 </div>
               </div>

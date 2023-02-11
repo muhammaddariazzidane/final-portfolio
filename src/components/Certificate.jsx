@@ -20,11 +20,11 @@ import { MdChevronLeft, MdChevronRight } from "react-icons/md";
 export default function Certificate() {
   const SlideLeft = () => {
     let slider = document.getElementById("slider");
-    slider.scrollLeft = slider.scrollLeft - 450;
+    slider.scrollLeft = slider.scrollLeft - 310;
   };
   const SlideRight = () => {
     let slider = document.getElementById("slider");
-    slider.scrollLeft = slider.scrollLeft + 450;
+    slider.scrollLeft = slider.scrollLeft + 310;
   };
   const onInit = () => {
     // console.log("lightGallery has been initialized");
@@ -32,22 +32,22 @@ export default function Certificate() {
   return (
     <>
       <h1 className="text-white text-4xl text-center pb-12 pt-28">My Certificate</h1>
-      <div className="max-w-4xl mx-auto relative">
+      <div className="max-w-4xl mx-auto relative lg:px-0 px-6">
         <div className="flex w-full  justify-center items-center">
           <MdChevronLeft onClick={SlideLeft} className="lg:w-12 lg:h-12 w-8 h-8 block lg:-left-12 left-0 absolute bg-slate-800 text-violet-200 hover:animate-pulse  rounded-full cursor-pointer z-10" />
 
           <div id={"slider"} className="w-full  scrollbar-hide h-full overflow-x-scroll scroll whitespace-nowrap">
             <LightGallery onInit={onInit} speed={500} plugins={[lgThumbnail, lgZoom]}>
-              <a href="/img/dicoding.png" className="h-[50%] w-[50%] inline-block cursor-pointer relative p-3">
+              <a href="/img/dicoding.png" className="lg:h-[50%] h-[80%] w-[80%] lg:w-[50%] inline-block cursor-pointer relative p-3">
                 <LazyLoadImage className="w-full  h-full object-cover" src="/img/dicoding.png" effect="blur" />
               </a>
-              <a href="/img/codefirst.png" className="h-[50%] w-[50%] inline-block cursor-pointer relativ  p-3">
+              <a href="/img/codefirst.png" className="lg:h-[50%] h-[80%] w-[80%] lg:w-[50%] inline-block cursor-pointer relativ  p-3">
                 <LazyLoadImage className="w-full  h-full object-cover" src="/img/codefirst.png" effect="blur" />
               </a>
-              <a href="/img/skilvul.png" className="h-[50%] w-[50%] inline-block cursor-pointer relative   p-3">
+              <a href="/img/skilvul.png" className="lg:h-[50%] h-[80%] w-[80%] lg:w-[50%] inline-block cursor-pointer relative   p-3">
                 <LazyLoadImage className="w-full  h-full object-cover" src="/img/skilvul.png" effect="blur" />
               </a>
-              <a href="/img/dea.png" className="h-[50%] w-[50%] inline-block cursor-pointer relative   p-3">
+              <a href="/img/dea.png" className="lg:h-[50%] h-[80%] w-[80%] lg:w-[50%] inline-block cursor-pointer relative   p-3">
                 <LazyLoadImage className="w-full  h-full object-cover" src="/img/dea.png" effect="blur" />
               </a>
             </LightGallery>

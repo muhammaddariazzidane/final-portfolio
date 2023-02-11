@@ -9,9 +9,18 @@ import Tailwind from "../components/icons/Tailwind";
 import Mysql from "../components/icons/Mysql";
 import { Link } from "react-router-dom";
 
+import LightGallery from "lightgallery/react";
+import "lightgallery/css/lightgallery.css";
+import "lightgallery/css/lg-zoom.css";
+import "lightgallery/css/lg-thumbnail.css";
+
+import lgThumbnail from "lightgallery/plugins/thumbnail";
+import lgZoom from "lightgallery/plugins/zoom";
+
 export default function CodeigniterBlog() {
   const demo = "https://muhammaddariazzidane-blog.000webhostapp.com/";
   const repo = "https://github.com/muhammaddariazzidane/next-portfolio";
+  const onInit = () => {};
   return (
     <>
       {/* <Navbar /> */}
@@ -78,7 +87,11 @@ export default function CodeigniterBlog() {
                 </div>
               </div>
               <div className="w-full lg:w-5/12 flex-shrink-0">
-                <LazyLoadImage effect="blur" className="w-full shadow-lg shadow-violet-900 rounded-lg sm:max-w-full" src="/img/blogCI4.png" />
+                <LightGallery onInit={onInit} speed={500} plugins={[lgThumbnail, lgZoom]}>
+                  <a href="/img/blogCI4.png">
+                    <LazyLoadImage effect="blur" className="w-full shadow-lg shadow-violet-900 rounded-lg sm:max-w-full" src="/img/blogCI4.png" />
+                  </a>
+                </LightGallery>
               </div>
             </div>
           </section>

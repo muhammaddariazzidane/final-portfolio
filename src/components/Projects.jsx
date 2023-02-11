@@ -18,24 +18,24 @@ export default function Projects() {
       <section className="px-6 flex flex-wrap gap-x-12 gap-y-8 lg:gap-y-14 justify-center">
         <div className="w-full lg:w-1/4  shadow-sm  rounded-lg  md:w-1/3 2xl:w-1/5 sm:w-1/2 mx-4 ">
           <div className="overflow-hidden flex flex-col relative h-full">
-            <a href="#" className="flex-1">
+            <Link to="/CI4" className="flex-1">
               <div className="is-visible">
                 <LazyLoadImage effect="blur" src="/img/blogCI4.png" alt="" className="aspect-[6/3.33] rounded-lg w-full object-cover object-center shadow-none duration-500 ease-in-out group-hover:shadow-lg " />
                 <div className="mt-2  flex gap-x-3 text-blue-600 font-medium text-xs md:text-sm  flex-wrap items-center ">
-                  <div className="h-[1.85rem] w-[1.85rem]">
+                  <div className="lg:h-[1.85rem] lg:w-[1.85rem] h-6 w-[1.4rem]">
                     <Codeigniter />
                   </div>
-                  <div className="h-[1.85rem] w-[1.85rem]">
+                  <div className="lg:h-[1.85rem] lg:w-[1.85rem] h-6 w-[1.4rem]">
                     <Tailwind />
                   </div>
-                  <div className="h-[1.85rem] w-[1.85rem]">
+                  <div className="lg:h-[1.85rem] lg:w-[1.85rem] h-6 w-[1.4rem]">
                     <Mysql />
                   </div>
                 </div>
                 <h2 className="dark:text-slate-200  max-w-sm text-base font-medium leading-tight mt-2 truncate">Dariazzidane-blog</h2>
                 <div className="dark:text-slate-400  leading-relaxed md:line-clamp-3 mt-2 text-sm lg:mt-3">ini adalah hasil belajar codeigniter 4 dan ini sejenis blog cms sederhana</div>
               </div>
-            </a>
+            </Link>
 
             <Link to="/CI4" className="transition-all mt-3 duration-300 cursor-pointer hover:bg-violet-600 ease-in group inline-flex items-center rounded-full px-5 py-2 max-w-[7.4rem] font-medium   dark:text-white  bg-violet-800">
               <span className="text-xs">View detail</span>

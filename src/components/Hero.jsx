@@ -6,9 +6,17 @@ import "react-lazy-load-image-component/src/effects/blur.css";
 // import { Twitter } from "feather-icons-react";
 import { FiFacebook, FiInstagram, FiTwitter } from "react-icons/fi";
 import { Link } from "react-router-dom";
-import { FaGithub } from "react-icons/fa";
+import { FaGithub, FaYoutube } from "react-icons/fa";
+import LightGallery from "lightgallery/react";
+import "lightgallery/css/lightgallery.css";
+import "lightgallery/css/lg-zoom.css";
+import "lightgallery/css/lg-thumbnail.css";
+
+import lgThumbnail from "lightgallery/plugins/thumbnail";
+import lgZoom from "lightgallery/plugins/zoom";
 
 export default function Hero() {
+  const onInit = () => {};
   return (
     <>
       <div className="grid grid-cols-12  max-w-screen-2xl lg:py-12 pt-6 scroll-mt-20 mx-auto">
@@ -35,10 +43,17 @@ export default function Hero() {
                 <Link to="https://github.com/muhammaddariazzidane/" className="scale-125" target="_blank" rel="noreferrer">
                   <FaGithub className=" text-slate-200" />
                 </Link>
+                <Link to="https://github.com/muhammaddariazzidane/" className="scale-125 lg:scale-150" target="_blank" rel="noreferrer">
+                  <FaYoutube className=" text-red-600" />
+                </Link>
               </div>
             </div>
             <div className="w-full lg:w-5/12 flex-shrink-0">
-              <LazyLoadImage effect="blur" className="w-full  rounded-lg sm:max-w-full" src="/img/dicoding.png" />
+              <LightGallery plugins={[lgThumbnail, lgZoom]} speed={500} onInit={onInit}>
+                <a href="/img/dicoding.png">
+                  <LazyLoadImage effect="blur" className="w-full  rounded-lg sm:max-w-full" src="/img/dicoding.png" />
+                </a>
+              </LightGallery>
             </div>
           </div>
         </section>

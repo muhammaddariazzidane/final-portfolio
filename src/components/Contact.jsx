@@ -31,7 +31,7 @@ export default function Contact() {
 
   return (
     <>
-      <div className="pb-8 lg:mt-[13.2rem] px-16 mt-28 scroll-mt-7 " id="contact">
+      <div className="pb-8 lg:mt-[13.2rem] lg:px-16 px-6 mt-28 scroll-mt-7 " id="contact">
         <h4 className="text-4xl font-semibold text-center text-violet-100 mb-16">Contact me</h4>
         <div className="flex justify-center">
           <div className="mx-auto w-full max-w-[550px]">
