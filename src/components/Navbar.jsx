@@ -53,16 +53,16 @@ export default function Navbar() {
           }`}
         >
           <div className="flex text-center  flex-col gap-y-2 [&_svg]:inline [&_svg]:w-4 [&_svg]:h-4 md:[&_svg]:w-5 md:[&_svg]:h-5  [&_svg]:stroke-1 [&_svg]:mr-2">
-            <a href="#skills" className="text-violet-200  hover:bg-slate-800 focus:bg-violet-800 rounded-lg p-2 transition-all duration-300 hover:text-white">
+            <a onClick={handleFlip} href="#skills" className="text-violet-200  hover:bg-slate-800 focus:bg-violet-800 rounded-lg p-2 transition-all duration-300 hover:text-white">
               Skills
             </a>
-            <a href="#projects" className="text-violet-200  hover:bg-slate-800 focus:bg-violet-800 rounded-lg p-2 transition-all duration-300 hover:text-white">
+            <a onClick={handleFlip} href="#projects" className="text-violet-200  hover:bg-slate-800 focus:bg-violet-800 rounded-lg p-2 transition-all duration-300 hover:text-white">
               Project
             </a>
-            <a href="#" className="text-violet-200 hover:bg-slate-800 focus:bg-violet-800 rounded-lg p-2 transition-all duration-300 hover:text-white">
+            <a onClick={handleFlip} href="#" className="text-violet-200 hover:bg-slate-800 focus:bg-violet-800 rounded-lg p-2 transition-all duration-300 hover:text-white">
               About
             </a>
-            <a href="#contact" className="text-violet-200 hover:bg-slate-800 focus:bg-violet-800 rounded-lg p-2 transition-all duration-300 hover:text-white">
+            <a onClick={handleFlip} href="#contact" className="text-violet-200 hover:bg-slate-800 focus:bg-violet-800 rounded-lg p-2 transition-all duration-300 hover:text-white">
               Contact
             </a>
           </div>
