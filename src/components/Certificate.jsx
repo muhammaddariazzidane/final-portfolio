@@ -31,7 +31,7 @@ export default function Certificate() {
   };
   return (
     <>
-      <h1 className="text-white text-4xl text-center pb-12 pt-28">My Certificate</h1>
+      <h1 className="text-4xl font-semibold text-center text-violet-100 pb-12 pt-28">My Certificate</h1>
       <div className="max-w-4xl mx-auto relative lg:px-0 px-6">
         <div className="flex w-full  justify-center items-center">
           <MdChevronLeft onClick={SlideLeft} className="lg:w-12 lg:h-12 w-10 h-10 block lg:-left-12 left-1 absolute bg-slate-800 text-violet-200 hover:animate-pulse  rounded-full cursor-pointer z-10" />
