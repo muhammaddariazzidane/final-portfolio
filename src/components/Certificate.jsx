@@ -34,7 +34,7 @@ export default function Certificate() {
       <h1 className="text-white text-4xl text-center pb-12 pt-28">My Certificate</h1>
       <div className="max-w-4xl mx-auto relative lg:px-0 px-6">
         <div className="flex w-full  justify-center items-center">
-          <MdChevronLeft onClick={SlideLeft} className="lg:w-12 lg:h-12 w-8 h-8 block lg:-left-12 left-0 absolute bg-slate-800 text-violet-200 hover:animate-pulse  rounded-full cursor-pointer z-10" />
+          <MdChevronLeft onClick={SlideLeft} className="lg:w-12 lg:h-12 w-10 h-10 block lg:-left-12 left-1 absolute bg-slate-800 text-violet-200 hover:animate-pulse  rounded-full cursor-pointer z-10" />
 
           <div id={"slider"} className="w-full  scrollbar-hide h-full overflow-x-scroll scroll whitespace-nowrap">
             <LightGallery onInit={onInit} speed={500} plugins={[lgThumbnail, lgZoom]}>
@@ -53,7 +53,7 @@ export default function Certificate() {
             </LightGallery>
           </div>
 
-          <MdChevronRight onClick={SlideRight} className="lg:w-12 lg:h-12 w-8 h-8 block  lg:-right-12 right-0 absolute bg-slate-800 text-violet-200 hover:animate-pulse  rounded-full cursor-pointer z-1" />
+          <MdChevronRight onClick={SlideRight} className="lg:w-12 lg:h-12 w-10 h-10 block  lg:-right-12 right-1 absolute bg-slate-800 text-violet-200 hover:animate-pulse  rounded-full cursor-pointer z-1" />
         </div>
       </div>
     </>
