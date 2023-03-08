@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
-export default function Navbar() {
+export default function Navbar({ active }) {
   const [flip, setFlip] = useState(false);
 
   const handleFlip = () => {
@@ -9,7 +9,7 @@ export default function Navbar() {
   };
   return (
     <>
-      <nav className="z-40 bg-slate-900 relative dark:shadow-none  lg:px-[4.2rem] px-4  py-4 ">
+      <nav className="z-40 bg-slate-900 fixed w-full dark:shadow-none  lg:px-[4.2rem] px-4  py-4 ">
         <div className="container mx-auto lg:max-w-screen-2xl flex flex-row items-center justify-between">
           <Link className="mr-3 lg:px-3 flex shrink-0 text-white text-2xl font-semibold items-center focus:outline-none" to="/">
             ZIDANE
@@ -48,7 +48,7 @@ export default function Navbar() {
           </button>
         </div>
         <div
-          className={`absolute z-[99]  top-16 right-8 max-w-xs w-[45%] font-semibold  rounded-lg p-3 bg-slate-900 border border-violet-900 shadow-sm transition-all duration-700 lg:hidden md:hidden sm:hidden  ${
+          className={`absolute z-[99]  top-16 right-8 max-w-xs w-[45%] overflow-hidden font-semibold  rounded-lg p-3 bg-slate-900 border border-violet-900 shadow-sm transition-all duration-700 lg:hidden md:hidden sm:hidden  ${
             flip ? "rotate-0 " : "rotate-180 scale-y-0 transition-all duration-500"
           }`}
         >

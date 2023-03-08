@@ -1,10 +1,7 @@
-import { BeakerIcon } from "@heroicons/react/24/solid";
 import React from "react";
-import Navbar from "../components/Navbar";
 import Layout from "../Layout/Layout";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
-import Codeigniter from "../components/icons/Codeigniter";
 import Tailwind from "../components/icons/Tailwind";
 import Mysql from "../components/icons/Mysql";
 import { Link } from "react-router-dom";
@@ -16,10 +13,12 @@ import "lightgallery/css/lg-thumbnail.css";
 
 import lgThumbnail from "lightgallery/plugins/thumbnail";
 import lgZoom from "lightgallery/plugins/zoom";
+import Laravel from "./../components/icons/Laravel";
+import Alpine from "../components/icons/Alpine";
 
-export default function CodeigniterBlog() {
-  const demo = "https://muhammaddariazzidane-blog.000webhostapp.com/";
-  const repo = "https://github.com/muhammaddariazzidane/blog_appCI4Beta";
+export default function LaravelForum() {
+  const demo = "https://whyngebull.000webhostapp.com/";
+  const repo = "https://github.com/muhammaddariazzidane/laravel-9-forum";
   const onInit = () => {};
   return (
     <>
@@ -29,9 +28,12 @@ export default function CodeigniterBlog() {
           <section className="col-span-10  col-start-2">
             <div className="relative flex flex-col-reverse lg:flex-row justify-between gap-6 lg:gap-12">
               <div className="w-full lg:w-7/12">
-                <h1 className="font-semibold text-xl max-w-xl lg:text-5xl tracking-tight leading-none bg-gradient-to-br from-violet-700 to-violet-300 bg-clip-text text-transparent py-2">Dariazzidane-blog</h1>
+                <h1 className="font-semibold text-xl max-w-xl lg:text-5xl tracking-tight leading-none bg-gradient-to-br from-violet-700 to-violet-300 bg-clip-text text-transparent py-2">WhyNgebull-app</h1>
                 <div className="">
-                  <p className="text-slate-500 dark:text-slate-400 leading-rela5ed mt-3 md:mt-6 md:text-lg">ini adalah hasil belajar codeigniter 4 dan ini sejenis blog cms sederhana</p>
+                  <p className="text-slate-500 dark:text-slate-400 leading-rela5ed mt-3 md:mt-6 md:text-lg">
+                    Project ini terinspirasi dari stackoverflow, lalu saya belajar laravel 9 dan coba untuk membuat sebuah forum sederhana dengan menggunakan beberapa ekosistem dari laravel yaitu laravel, breeze, socialite, scout dan third
+                    party laravel-turbolinks, laravel-notify
+                  </p>
                 </div>
                 <div className="font-mono tracking-tighter text-xs sm:text-sm mt-4">
                   <span className="h-px mt-6 mb-5 w-full hidden md:inline-block bg-gradient-to-r from-violet-300 dark:from-violet-700 via-transparent to-transparent"></span>
@@ -43,12 +45,16 @@ export default function CodeigniterBlog() {
                     React js
                   </p> */}
                   <p>
-                    <Codeigniter className="h-5 w-5" />
-                    Codeigniter
+                    <Laravel className="h-5 w-5" />
+                    Laravel
                   </p>
                   <p>
                     <Tailwind className="h-5 w-5" />
                     Tailwindcss
+                  </p>
+                  <p>
+                    <Alpine className="h-5 w-5" />
+                    Alpine js
                   </p>
                   <p>
                     <Mysql className="h-5 w-5" />
@@ -88,8 +94,8 @@ export default function CodeigniterBlog() {
               </div>
               <div className="w-full lg:w-5/12 h-full flex-shrink-0 ">
                 <LightGallery onInit={onInit} speed={500} plugins={[lgThumbnail, lgZoom]}>
-                  <a href="/img/blogCI4.png">
-                    <LazyLoadImage effect="blur" className="w-full shadow-md  shadow-violet-900 rounded-lg sm:max-w-full" src="/img/blogCI4.png" />
+                  <a href="/img/forumLaravel9.png">
+                    <LazyLoadImage effect="blur" className="w-full shadow-md  shadow-violet-900 rounded-lg sm:max-w-full" src="/img/forumLaravel9.png" />
                   </a>
                 </LightGallery>
               </div>

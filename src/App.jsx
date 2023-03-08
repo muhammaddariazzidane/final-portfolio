@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 
 // const Home = lazy(() => import("./pages/Home"));
 // const CodeigniterBlog = lazy(() => import("./content/CodeigniterBlog"));
+import LaravelForum from "./content/LaravelForum";
 
 export default function App() {
   return (
@@ -14,6 +15,7 @@ export default function App() {
         <Routes>
           <Route path={"/"} element={<Home />} />
           <Route path="/ci4" element={<CodeigniterBlog />} />
+          <Route path="/laravelForum" element={<LaravelForum />} />
         </Routes>
         {/* </Suspense> */}
       </Router>

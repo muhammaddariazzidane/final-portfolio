@@ -8,6 +8,8 @@ import Codeigniter from "../components/icons/Codeigniter";
 import Mysql from "../components/icons/Mysql";
 import Bootstrap from "../components/icons/Bootstrap";
 import { Link } from "react-router-dom";
+import { SiAlpinedotjs } from "react-icons/si";
+import Alpine from "./icons/Alpine";
 
 export default function Projects() {
   return (
@@ -38,6 +40,42 @@ export default function Projects() {
             </Link>
 
             <Link to="/CI4" className="transition-all mt-3 duration-300 cursor-pointer hover:bg-violet-600 ease-in group inline-flex items-center rounded-full px-5 py-2 max-w-[7.4rem] font-medium   dark:text-white  bg-violet-800">
+              <span className="text-xs">View detail</span>
+              <svg className=" ml-2 -mr-1 stroke-current stroke-[1.5]" fill="none" height="10" width="10" viewBox="0 0 10 10" aria-hidden="true">
+                <path className="opacity-0 transition group-hover:opacity-100" d="M0 5h7"></path>
+                <path className="transition group-hover:translate-x-[3px]" d="M1 1l4 4-4 4"></path>
+              </svg>
+            </Link>
+          </div>
+        </div>
+        {/*  */}
+        <div className="w-full lg:w-1/4  shadow-sm  rounded-lg  md:w-1/3 2xl:w-1/5 sm:w-1/2 mx-4 ">
+          <div className="overflow-hidden flex flex-col relative h-full">
+            <Link to="/laravelForum" className="flex-1">
+              <div className="is-visible">
+                <LazyLoadImage effect="blur" src="/img/forumLaravel9.png" alt="" className="aspect-[6/3.33] rounded-lg w-full object-cover object-center shadow-none duration-500 ease-in-out group-hover:shadow-lg " />
+                <div className="mt-2 flex gap-x-3 text-blue-600 font-medium text-xs md:text-sm  flex-wrap items-center ">
+                  <div className="lg:h-[1.85rem] lg:w-[1.85rem] h-6 w-[1.4rem]">
+                    <Laravel />
+                  </div>
+                  <div className="lg:h-[1.85rem] lg:w-[1.85rem] h-6 w-[1.4rem]">
+                    <Tailwind />
+                  </div>
+                  <div className="lg:h-[1.85rem] flex items-center lg:w-[1.85rem] h-6 w-[1.4rem]">
+                    <Alpine />
+                  </div>
+                  <div className="lg:h-[1.85rem] lg:w-[1.85rem] h-6 w-[1.4rem]">
+                    <Mysql />
+                  </div>
+                </div>
+                <h2 className="dark:text-slate-200  max-w-sm text-base font-medium leading-tight mt-2 truncate">WhyNgebull-app</h2>
+                <div className="dark:text-slate-400  leading-relaxed md:line-clamp-3 mt-2 text-sm lg:mt-3">
+                  Project ini terinspirasi dari stackoverflow, lalu saya belajar laravel 9 dan coba untuk membuat sebuah forum sederhana dengan...
+                </div>
+              </div>
+            </Link>
+
+            <Link to="/laravelForum" className="transition-all mt-3 duration-300 cursor-pointer hover:bg-violet-600 ease-in group inline-flex items-center rounded-full px-5 py-2 max-w-[7.4rem] font-medium   dark:text-white  bg-violet-800">
               <span className="text-xs">View detail</span>
               <svg className=" ml-2 -mr-1 stroke-current stroke-[1.5]" fill="none" height="10" width="10" viewBox="0 0 10 10" aria-hidden="true">
                 <path className="opacity-0 transition group-hover:opacity-100" d="M0 5h7"></path>

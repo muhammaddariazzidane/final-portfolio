@@ -12,6 +12,7 @@
     "@emailjs/browser": "^3.10.0",
     "@heroicons/react": "^2.0.14",
     "animate.css-react": "^1.1.0",
+    "framer-motion": "^10.2.3",
     "lightgallery": "^2.7.1",
     "react": "^18.2.0",
     "react-animated-css": "^1.2.1",

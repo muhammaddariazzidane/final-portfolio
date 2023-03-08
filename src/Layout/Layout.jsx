@@ -4,11 +4,11 @@ import Navbar from "../components/Navbar";
 
 export default function Layout({ children }) {
   const [show, setShow] = useState(false);
+
   useEffect(() => {
     const handleShadow = () => {
       if (window.scrollY > 250) {
         setShow(true);
-        // console.log("turun");
       } else {
         setShow(false);
       }
