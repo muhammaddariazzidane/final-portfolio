@@ -30,7 +30,7 @@ export default function Hero() {
                   Front-end Web <span className="text-violet-500">Developer</span>{" "}
                 </span>
               </h1>
-              <div className="md:block hidden">
+              <div className="">
                 <p className="text-slate-500 dark:text-slate-400 leading-rela5ed mt-3 md:mt-6 md:text-lg">
                   Halo👋, saya Zidan, saya mahasiswa di universitas bina sarana informatika karawang yang suka coding, musik, dan bermain game. Selamat datang di situs web pribadi saya{" "}
                 </p>
